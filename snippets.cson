@@ -1,0 +1,24 @@
+'.source.js':
+  'import React':
+    'prefix': 'ir'
+    'body': "import React from 'react'"
+  'simple stateless component':
+    'prefix': 'simstateless'
+    'body': '''
+      const $1 = ($2) => (
+        $3
+      );
+
+      export default $1;
+    '''
+  'stateless component':
+    'prefix': 'stateless'
+    'body': '''
+      const $1 = ($2) => {
+        return (
+          $3
+        );
+      };
+
+      export default $1;
+    '''
