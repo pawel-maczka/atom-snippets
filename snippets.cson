@@ -2,8 +2,9 @@
   'import React':
     'prefix': 'ir'
     'body': "import React from 'react';"
+
   'simple stateless component':
-    'prefix': 'simstateless'
+    'prefix': 'simpstateless'
     'body': '''
       const $1 = ($2) => (
         $3
@@ -12,6 +13,7 @@
       export default $1;
 
     '''
+
   'stateless component':
     'prefix': 'stateless'
     'body': '''
@@ -24,14 +26,16 @@
       export default $1;
 
     '''
+
   'import component':
     'prefix': 'icomp'
     'body': "import $1 from '$2/$1';"
+
   'import and export component':
     'prefix': 'iecomp'
     'body': '''
       import $1 from './$1';
 
       export default $1;
-      
+
     '''
