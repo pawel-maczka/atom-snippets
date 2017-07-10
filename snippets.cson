@@ -1,7 +1,7 @@
 '.source.js':
   'import React':
     'prefix': 'ir'
-    'body': "import React from 'react'"
+    'body': "import React from 'react';"
   'simple stateless component':
     'prefix': 'simstateless'
     'body': '''
@@ -10,6 +10,7 @@
       );
 
       export default $1;
+
     '''
   'stateless component':
     'prefix': 'stateless'
@@ -21,4 +22,16 @@
       };
 
       export default $1;
+
+    '''
+  'import component':
+    'prefix': 'icomp'
+    'body': "import $1 from '$2/$1';"
+  'import and export component':
+    'prefix': 'iecomp'
+    'body': '''
+      import $1 from './$1';
+
+      export default $1;
+      
     '''
