@@ -39,3 +39,15 @@
       export default $1;
 
     '''
+
+  'create saga and saga watcher':
+    'prefix': 'csaga'
+    'body': '''
+      function *$1(action) {
+        $4
+      }
+
+      function *$1Watcher() {
+        yield $2($3, $1);
+      }
+    '''
